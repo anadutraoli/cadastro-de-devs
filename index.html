@@ -35,7 +35,8 @@
         <label for="fullstack">Fullstack</label>
         <br />
         <label for="seniority">Senioridade</label>
-        <select name="userSeniority" id="seniority">
+        <select name="userSeniority" id="seniority" required>
+          <option value="notInformed"></option>
           <option value="estagio">Estágio</option>
           <option value="junior">Júnior</option>
           <option value="pleno">Pleno</option>
@@ -62,7 +63,13 @@
         <label for="java">Java</label>
 
         <label for="comment">Conte um pouco mais da sua experiência:</label>
-        <textarea name="userComment" id="comment" rows="4" cols="50"></textarea>
+        <textarea
+          name="userComment"
+          id="comment"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
       </fieldset>
       <button type="submit">ENVIAR</button>
     </form>
