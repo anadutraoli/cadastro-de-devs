@@ -1,27 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro de DEVs</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <h1>Cadastro de DEVs</h1>
     <p>Complete as informações</p>
     <form action="" method="get">
-        <fieldset>
-            <legend>Dados pessoais</legend>
-            <label for="userName">Nome</label>
-            <input type="text" name="name" id="userName" required>
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="userName">Nome</label>
+        <input type="text" name="name" id="userName" required />
 
-            <label for="userLastName">Sobrenome</label>
-            <input type="text" name="lastName" id="userLastName" required>
+        <label for="userLastName">Sobrenome</label>
+        <input type="text" name="lastName" id="userLastName" required />
 
-            <label for="userEmail">Email</label>
-            <input type="email" name="email" id="userEmail" required>
-        </fieldset>
-        <button type="submit">ENVIAR</button>
+        <label for="userEmail">Email</label>
+        <input type="email" name="email" id="userEmail" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Profissional</legend>
+        <p>De qual lado da aplicação você desenvolve?</p>
+        <input type="radio" name="userStack" id="frontEnd" />
+        <label for="frontEnd">Front-End</label>
+
+        <input type="radio" name="userStack" id="backEnd" />
+        <label for="backEnd">Back-End</label>
+
+        <input type="radio" name="userStack" id="fullstack" />
+        <label for="fullstack">Fullstack</label>
+        <br />
+        <label for="seniority">Senioridade</label>
+        <select name="userSeniority" id="seniority" required>
+          <option value="notInformed"></option>
+          <option value="estagio">Estágio</option>
+          <option value="junior">Júnior</option>
+          <option value="pleno">Pleno</option>
+          <option value="senior">Sênior</option>
+        </select>
+
+        <p>Selecione as tecnologias que utiliza:</p>
+        <input type="checkbox" name="technologies" id="html" />
+        <label for="html">HTML</label>
+
+        <input type="checkbox" name="technologies" id="css" />
+        <label for="css">CSS</label>
+
+        <input type="checkbox" name="technologies" id="javascript" />
+        <label for="javascript">JavaScript</label>
+
+        <input type="checkbox" name="technologies" id="php" />
+        <label for="php">PHP</label>
+
+        <input type="checkbox" name="technologies" id="python" />
+        <label for="python">Python</label>
+
+        <input type="checkbox" name="technologies" id="java" />
+        <label for="java">Java</label>
+
+        <label for="comment">Conte um pouco mais da sua experiência:</label>
+        <textarea
+          name="userComment"
+          id="comment"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+      </fieldset>
+      <button type="submit">ENVIAR</button>
     </form>
-</body>
+  </body>
 </html>
