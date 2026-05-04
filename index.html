@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Devs</title>
+    <title>Cadastro de DEVs</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Cadastro de Devs</h1>
+    <h1>Cadastro de DEVs</h1>
     <p>Complete as informações</p>
     <form action="" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="userName">Nome</label>
+            <input type="text" name="name" id="userName" required>
 
+            <label for="userLastName">Sobrenome</label>
+            <input type="text" name="lastName" id="userLastName" required>
+
+            <label for="userEmail">Email</label>
+            <input type="email" name="email" id="userEmail" required>
+        </fieldset>
         <button type="submit">ENVIAR</button>
     </form>
 </body>
